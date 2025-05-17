@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR симулятор | Участники</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .team-member {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .supervisor {
+            background-color: #f0f8ff;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VR симулятор сборки квадрокоптера</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="team.html" class="active">Участники</a></li>
+                <li><a href="journal.html">Журнал</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Наша команда</h2>
+            
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="images/member1.jpg" alt="Мельников С.В.">
+                    <h3>Мельников Серафим Владимирович</h3>
+                    <p><strong>Роль:</strong> Разработка, UI/UX дизайн</p>
+                    <p><strong>Группа:</strong> 221-378</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="images/member2.jpg" alt="Руфов Р.Р.">
+                    <h3>Руфов Родион Рафаэлевич</h3>
+                    <p><strong>Роль:</strong> Разработка</p>
+                    <p><strong>Группа:</strong> 221-3710</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="images/member3.jpg" alt="Мусатов Т.Э.">
+                    <h3>Мусатов Тимофей Эдуардович</h3>
+                    <p><strong>Роль:</strong> 3D моделирование</p>
+                    <p><strong>Группа:</strong> 221-3711</p>
+                </div>
+                
+                <!-- Добавьте остальных участников по аналогии -->
+            </div>
+
+            <div class="supervisor">
+                <h3>Руководитель проекта</h3>
+                <div class="team-member">
+                    <img src="images/supervisor.jpg" alt="Вирковская А.А.">
+                    <h3>Вирковская Анастасия Алексеевна</h3>
+                    <p><strong>Должность:</strong> Преподаватель</p>
+                </div>
+            </div>
+
+            <div class="team-structure">
+                <h3>Структура работы в проекте</h3>
+                <ul>
+                    <li><strong>Разработка:</strong> Мельников С.В., Руфов Р.Р.</li>
+                    <li><strong>3D моделирование:</strong> Мусатов Т.Э., Крылов Е.О.</li>
+                    <li><strong>UI/UX дизайн:</strong> Мельников С.В.</li>
+                    <li><strong>Портирование:</strong> Мирзаев И.Б.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Московский Политех | Проектная деятельность</p>
+        <p>VR симулятор сборки электрической схемы квадрокоптера</p>
+    </footer>
+</body>
+</html>
