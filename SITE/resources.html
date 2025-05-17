@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR симулятор | Ресурсы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .resource-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+        .resource-card h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .resource-card a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .resource-card a:hover {
+            text-decoration: underline;
+        }
+        .partner-logo {
+            max-width: 200px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VR симулятор сборки квадрокоптера</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="team.html">Участники</a></li>
+                <li><a href="journal.html">Журнал</a></li>
+                <li><a href="resources.html" class="active">Ресурсы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Полезные ресурсы</h2>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>Официальная документация</h3>
+                    <ul>
+                        <li><a href="#">Руководство по сборке квадрокоптеров</a></li>
+                        <li><a href="#">Справочник по электронным компонентам</a></li>
+                        <li><a href="#">VR разработка для начинающих</a></li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>Организация-партнер</h3>
+                    <img src="images/partner-logo.png" alt="Лого партнера" class="partner-logo">
+                    <p><a href="#">Сайт нашей партнерской организации</a></p>
+                    <p>Контакты для сотрудничества:</p>
+                    <p>Email: partner@example.com</p>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>Технические статьи</h3>
+                    <ul>
+                        <li><a href="#">Применение VR в образовании</a></li>
+                        <li><a href="#">Тенденции развития БПЛА</a></li>
+                        <li><a href="#">Оптимизация 3D моделей для VR</a></li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>Видеоматериалы</h3>
+                    <ul>
+                        <li><a href="#">Основы работы с Unity для VR</a></li>
+                        <li><a href="#">Принципы сборки квадрокоптеров</a></li>
+                        <li><a href="#">Демонстрация аналогичных проектов</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="project-docs">
+                <h3>Документы проекта</h3>
+                <ul>
+                    <li><a href="docs/project-specification.pdf" download>Техническое задание (PDF)</a></li>
+                    <li><a href="docs/presentation.pptx" download>Презентация проекта (PPTX)</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Московский Политех | Проектная деятельность</p>
+        <p>VR симулятор сборки электрической схемы квадрокоптера</p>
+    </footer>
+</body>
+</html>
