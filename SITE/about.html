@@ -1,24 +1,92 @@
-<!-- (шапка как в index.html) -->
-<main>
-    <section>
-        <h2>О проекте</h2>
-        <p>Проект разрабатывается студентами Московского Политеха для решения проблемы нехватки специалистов по БПЛА.</p>
-        
-        <h3>Проблематика</h3>
-        <ul>
-            <li>Высокая стоимость реальных квадрокоптеров</li>
-            <li>Недостаток практических тренажеров</li>
-        </ul>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR симулятор | О проекте</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .project-goals {
+            background-color: #f0f8ff;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        .roadmap {
+            margin: 3rem 0;
+        }
+        .roadmap img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VR симулятор сборки квадрокоптера</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html" class="active">О проекте</a></li>
+                <li><a href="team.html">Участники</a></li>
+                <li><a href="journal.html">Журнал</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <h3>Задачи проекта</h3>
-        <ol>
-            <li>Создание 3D моделей компонентов</li>
-            <li>Разработка VR-управления</li>
-            <li>Программирование логики приложения</li>
-            <li>Портирование на Android</li>
-        </ol>
-        
-        <img src="images/prototype.jpg" alt="Прототип приложения">
-    </section>
-</main>
-<!-- (футер как в index.html) -->
+    <main>
+        <section>
+            <h2>О проекте</h2>
+            <p>Наш проект представляет собой VR-симулятор для обучения сборке электрических схем квадрокоптеров, разрабатываемый студентами Московского Политеха.</p>
+            
+            <div class="project-goals">
+                <h3>Актуальность проекта</h3>
+                <p>В связи с ростом популярности БПЛА возникает острая необходимость в квалифицированных специалистах. Наш симулятор решает проблему дороговизны реальных тренажеров.</p>
+            </div>
+
+            <h3>Проблематика</h3>
+            <ul class="problem-list">
+                <li>Высокая стоимость реальных квадрокоптеров для обучения</li>
+                <li>Недостаток практических тренажеров на рынке</li>
+                <li>Дефицит специалистов по БПЛА</li>
+            </ul>
+
+            <h3>Цели и задачи</h3>
+            <div class="goals-container">
+                <div class="goal-card">
+                    <h4>Основная цель</h4>
+                    <p>Создание доступного VR-тренажера для подготовки специалистов по сборке БПЛА</p>
+                </div>
+                <div class="tasks">
+                    <h4>Задачи проекта:</h4>
+                    <ol>
+                        <li>Разработка 3D-моделей компонентов</li>
+                        <li>Создание VR-интерфейса</li>
+                        <li>Программирование логики сборки</li>
+                        <li>Тестирование и отладка</li>
+                        <li>Портирование на мобильные платформы</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="roadmap">
+                <h3>Дорожная карта проекта</h3>
+                <img src="images/roadmap.jpg" alt="Дорожная карта проекта">
+                <p class="img-caption">План реализации проекта на два семестра</p>
+            </div>
+
+            <div class="gantt-chart">
+                <h3>Диаграмма Ганта</h3>
+                <img src="images/gantt.png" alt="Диаграмма Ганта">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Московский Политех | Проектная деятельность</p>
+        <p>VR симулятор сборки электрической схемы квадрокоптера</p>
+    </footer>
+</body>
+</html>
