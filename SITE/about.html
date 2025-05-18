@@ -9,6 +9,7 @@
             --primary-red: #d32f2f;
             --primary-orange: #f57c00;
             --primary-white: #ffffff;
+            --dark-accent: #b71c1c;
             --content-padding: min(5vw, 2.5rem);
             --max-width: 1200px;
         }
@@ -18,12 +19,14 @@
             padding: 0;
             background: var(--primary-white);
             color: #333;
+            line-height: 1.6;
         }
         header {
             background: linear-gradient(135deg, var(--primary-red), var(--primary-orange));
             color: white;
             padding: 1.5rem var(--content-padding);
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
         nav ul {
             list-style: none;
@@ -32,15 +35,19 @@
             justify-content: center;
             gap: 1.5rem;
             margin: 1rem 0 0;
+            flex-wrap: wrap;
         }
         nav a {
             color: white;
             text-decoration: none;
+            font-weight: 600;
             padding: 0.5rem 1rem;
             border-radius: 4px;
+            transition: all 0.3s ease;
         }
-        nav a.active {
+        nav a:hover, nav a.active {
             background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
         }
         main {
             padding: 2rem var(--content-padding);
@@ -49,13 +56,13 @@
         }
         .content-block {
             background: white;
-            padding: 1.5rem;
+            padding: 1.8rem;
             border-radius: 8px;
             margin-bottom: 2rem;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 10px rgba(214, 69, 0, 0.1);
         }
         footer {
-            background: var(--primary-red);
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-accent));
             color: white;
             text-align: center;
             padding: 1.5rem var(--content-padding);
@@ -85,12 +92,28 @@
     <main>
         <div class="content-block">
             <h2>О проекте</h2>
-            <p>Проект разрабатывается студентами Московского Политеха...</p>
+            <p>Проект разрабатывается студентами Московского Политеха для решения проблемы нехватки специалистов по БПЛА.</p>
+            
+            <h3>Проблематика</h3>
+            <ul>
+                <li>Высокая стоимость реальных квадрокоптеров для обучения</li>
+                <li>Недостаток практических тренажеров на рынке</li>
+                <li>Дефицит специалистов по БПЛА</li>
+            </ul>
+
+            <h3>Цели и задачи</h3>
+            <ol>
+                <li>Создание 3D моделей компонентов квадрокоптера</li>
+                <li>Разработка VR-интерфейса управления</li>
+                <li>Программирование логики приложения</li>
+                <li>Портирование на мобильные платформы</li>
+            </ol>
         </div>
     </main>
 
     <footer>
         <p>© 2024 Московский Политех | Проектная деятельность</p>
+        <p>VR симулятор сборки электрической схемы квадрокоптера</p>
     </footer>
 </body>
 </html>
