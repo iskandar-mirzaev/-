@@ -9,6 +9,7 @@
             --primary-red: #d32f2f;
             --primary-orange: #f57c00;
             --primary-white: #ffffff;
+            --dark-accent: #b71c1c;
             --content-padding: min(5vw, 2.5rem);
             --max-width: 1200px;
         }
@@ -18,12 +19,14 @@
             padding: 0;
             background: var(--primary-white);
             color: #333;
+            line-height: 1.6;
         }
         header {
             background: linear-gradient(135deg, var(--primary-red), var(--primary-orange));
             color: white;
             padding: 1.5rem var(--content-padding);
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
         nav ul {
             list-style: none;
@@ -32,15 +35,19 @@
             justify-content: center;
             gap: 1.5rem;
             margin: 1rem 0 0;
+            flex-wrap: wrap;
         }
         nav a {
             color: white;
             text-decoration: none;
+            font-weight: 600;
             padding: 0.5rem 1rem;
             border-radius: 4px;
+            transition: all 0.3s ease;
         }
-        nav a.active {
+        nav a:hover, nav a.active {
             background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
         }
         main {
             padding: 2rem var(--content-padding);
@@ -61,10 +68,15 @@
             background: white;
             padding: 1.5rem;
             border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 10px rgba(214, 69, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(214, 69, 0, 0.2);
         }
         footer {
-            background: var(--primary-red);
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-accent));
             color: white;
             text-align: center;
             padding: 1.5rem var(--content-padding);
@@ -73,9 +85,6 @@
         @media (max-width: 768px) {
             :root {
                 --content-padding: 1.5rem;
-            }
-            nav ul {
-                flex-wrap: wrap;
             }
         }
     </style>
@@ -97,23 +106,28 @@
     <main>
         <section class="hero">
             <h2>Изучайте сборку БПЛА в виртуальной реальности</h2>
-            <p>Инновационный VR-тренажер для подготовки специалистов</p>
+            <p>Инновационный VR-тренажер для подготовки специалистов по беспилотным летательным аппаратам</p>
         </section>
 
         <section class="features">
             <div class="feature-card">
                 <h3>Актуальность</h3>
-                <p>Восполнение дефицита квалифицированных специалистов</p>
+                <p>Восполнение дефицита квалифицированных специалистов по БПЛА</p>
             </div>
             <div class="feature-card">
                 <h3>Цель</h3>
-                <p>Обучение сборке электрических схем квадрокоптеров</p>
+                <p>Обучение сборке электрических схем квадрокоптеров в VR-среде</p>
+            </div>
+            <div class="feature-card">
+                <h3>Технологии</h3>
+                <p>Точные 3D-модели всех компонентов квадрокоптера</p>
             </div>
         </section>
     </main>
 
     <footer>
         <p>© 2024 Московский Политех | Проектная деятельность</p>
+        <p>VR симулятор сборки электрической схемы квадрокоптера</p>
     </footer>
 </body>
 </html>
