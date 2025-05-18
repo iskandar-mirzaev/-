@@ -4,21 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VR симулятор | О проекте</title>
-    <link rel="stylesheet" href="css/style.css">
     <style>
-        .project-goals {
-            background-color: #f0f8ff;
-            padding: 2rem;
-            border-radius: 8px;
-            margin: 2rem 0;
+        :root {
+            --primary-red: #d32f2f;
+            --primary-orange: #f57c00;
+            --primary-white: #ffffff;
+            --content-padding: min(5vw, 2.5rem);
+            --max-width: 1200px;
         }
-        .roadmap {
-            margin: 3rem 0;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--primary-white);
+            color: #333;
         }
-        .roadmap img {
-            max-width: 100%;
-            border: 1px solid #ddd;
+        header {
+            background: linear-gradient(135deg, var(--primary-red), var(--primary-orange));
+            color: white;
+            padding: 1.5rem var(--content-padding);
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
             border-radius: 4px;
+        }
+        nav a.active {
+            background: rgba(255,255,255,0.2);
+        }
+        main {
+            padding: 2rem var(--content-padding);
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+        .content-block {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: var(--primary-red);
+            color: white;
+            text-align: center;
+            padding: 1.5rem var(--content-padding);
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            :root {
+                --content-padding: 1.5rem;
+            }
         }
     </style>
 </head>
@@ -37,56 +83,14 @@
     </header>
 
     <main>
-        <section>
+        <div class="content-block">
             <h2>О проекте</h2>
-            <p>Наш проект представляет собой VR-симулятор для обучения сборке электрических схем квадрокоптеров, разрабатываемый студентами Московского Политеха.</p>
-            
-            <div class="project-goals">
-                <h3>Актуальность проекта</h3>
-                <p>В связи с ростом популярности БПЛА возникает острая необходимость в квалифицированных специалистах. Наш симулятор решает проблему дороговизны реальных тренажеров.</p>
-            </div>
-
-            <h3>Проблематика</h3>
-            <ul class="problem-list">
-                <li>Высокая стоимость реальных квадрокоптеров для обучения</li>
-                <li>Недостаток практических тренажеров на рынке</li>
-                <li>Дефицит специалистов по БПЛА</li>
-            </ul>
-
-            <h3>Цели и задачи</h3>
-            <div class="goals-container">
-                <div class="goal-card">
-                    <h4>Основная цель</h4>
-                    <p>Создание доступного VR-тренажера для подготовки специалистов по сборке БПЛА</p>
-                </div>
-                <div class="tasks">
-                    <h4>Задачи проекта:</h4>
-                    <ol>
-                        <li>Разработка 3D-моделей компонентов</li>
-                        <li>Создание VR-интерфейса</li>
-                        <li>Программирование логики сборки</li>
-                        <li>Тестирование и отладка</li>
-                        <li>Портирование на мобильные платформы</li>
-                    </ol>
-                </div>
-            </div>
-
-            <div class="roadmap">
-                <h3>Дорожная карта проекта</h3>
-                <img src="images/roadmap.jpg" alt="Дорожная карта проекта">
-                <p class="img-caption">План реализации проекта на два семестра</p>
-            </div>
-
-            <div class="gantt-chart">
-                <h3>Диаграмма Ганта</h3>
-                <img src="images/gantt.png" alt="Диаграмма Ганта">
-            </div>
-        </section>
+            <p>Проект разрабатывается студентами Московского Политеха...</p>
+        </div>
     </main>
 
     <footer>
         <p>© 2024 Московский Политех | Проектная деятельность</p>
-        <p>VR симулятор сборки электрической схемы квадрокоптера</p>
     </footer>
 </body>
 </html>
