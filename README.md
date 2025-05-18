@@ -1,6 +1,4 @@
-Страницы сайта в гитхабе. https://htmlpreview.github.io/?https://raw.githubusercontent.com/iskandar-mirzaev/-/main/SITE/index.html Можно открыть по этой ссылке. Бот в телеграме @coptermospolybot. Код на бота [SITE/copter_bot.py
-](https://github.com/iskandar-mirzaev/-/blob/main/copter_bot.py)
-
+Страницы сайта в гитхабе. https://htmlpreview.github.io/?https://raw.githubusercontent.com/iskandar-mirzaev/-/main/SITE/index.html Можно открыть по этой ссылке. Бот в телеграме @coptermospolybot. Код на бота https://github.com/iskandar-mirzaev/-/blob/main/src/copter_bot.py
 
 
 
