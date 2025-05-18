@@ -69,8 +69,10 @@
             color: var(--primary-orange);
             font-weight: 600;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
         .resource-card a:hover {
+            color: var(--primary-red);
             text-decoration: underline;
         }
         .partner-logo {
@@ -80,6 +82,10 @@
             height: auto;
             object-fit: contain;
             margin: 1rem 0;
+            transition: transform 0.3s ease;
+        }
+        .partner-logo:hover {
+            transform: scale(1.05);
         }
         footer {
             background: linear-gradient(135deg, var(--primary-red), var(--dark-accent));
@@ -118,16 +124,42 @@
         <div class="resource-card">
             <h3>Официальная документация</h3>
             <ul>
-                <li><a href="#">Руководство по сборке квадрокоптеров</a></li>
-                <li><a href="#">Справочник по электронным компонентам</a></li>
-                <li><a href="#">VR разработка для начинающих</a></li>
+                <li>
+                    <a href="https://cdn1-img.robotbaza.ru/files/1/2578/4434450/original/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F_%D0%BF%D0%BE_%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B5_%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D0%B0.pdf" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Руководство по сборке квадрокоптеров
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.radio-komplekt.ru/handbook.php" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Справочник по электронным компонентам
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=7r8QGtDQ67E" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        VR разработка для начинающих
+                    </a>
+                </li>
             </ul>
         </div>
         
         <div class="resource-card">
             <h3>Организация-партнер</h3>
-            <img src="images/partners/logo-partner.jpg" alt="Логотип партнера" class="partner-logo">
-            <p><a href="#">Сайт нашей партнерской организации</a></p>
+            <a href="https://ru.coex.tech/" target="_blank" rel="noopener noreferrer">
+                <img src="images/partners/logo-partner.jpg" alt="Логотип партнера" class="partner-logo">
+            </a>
+            <p>
+                <a href="https://ru.coex.tech/" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    Сайт нашей партнерской организации
+                </a>
+            </p>
         </div>
     </main>
 
