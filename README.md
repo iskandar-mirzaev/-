@@ -1,3 +1,9 @@
+Страницы сайта в гитхабе. https://htmlpreview.github.io/?https://raw.githubusercontent.com/iskandar-mirzaev/-/main/SITE/index.html Можно открыть по этой ссылке. Бот в телеграме @coptermospolybot. Код на бота SITE/copter_bot.py
+
+
+
+
+
 # Участники
 
 | ФИО    | Учебная группа  | Код направления подготовки   | Профиль образовательной программы |
@@ -59,5 +65,4 @@
 ### Период проведения
 С 03 февраля 2025 г. это 24 мая 2025 г.
 
-Страницы сайта в гитхабе. https://htmlpreview.github.io/?https://raw.githubusercontent.com/iskandar-mirzaev/-/main/SITE/index.html Можно открыть по этой ссылке. 
-Бот в телеграме @coptermospolybot. Код на бота [SITE/copter_bot.py](https://github.com/iskandar-mirzaev/-/blob/main/SITE/copter_bot.py)
+
