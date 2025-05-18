@@ -57,30 +57,23 @@
         .hero {
             text-align: center;
             margin-bottom: 3rem;
-        }
-        .hero img {
-            max-width: 100%;
-            height: auto;
+            padding: 2rem;
+            background: rgba(255,255,255,0.9);
             border-radius: 8px;
-            object-fit: cover;
-            max-height: 400px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
-        .features {
+        .info-blocks {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin: 2rem 0;
+            margin: 3rem 0;
         }
-        .feature-card {
+        .info-block {
             background: white;
-            padding: 1.5rem;
+            padding: 1.8rem;
             border-radius: 8px;
             box-shadow: 0 3px 10px rgba(214, 69, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(214, 69, 0, 0.2);
+            border-left: 4px solid var(--primary-orange);
         }
         footer {
             background: linear-gradient(135deg, var(--primary-red), var(--dark-accent));
@@ -92,6 +85,9 @@
         @media (max-width: 768px) {
             :root {
                 --content-padding: 1.5rem;
+            }
+            .info-blocks {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -113,24 +109,23 @@
     <main>
         <section class="hero">
             <h2>Изучайте сборку БПЛА в виртуальной реальности</h2>
-            <img src="images/main-banner.jpg" alt="VR симулятор сборки квадрокоптера">
             <p>Инновационный VR-тренажер для подготовки специалистов по беспилотным летательным аппаратам</p>
         </section>
 
-        <section class="features">
-            <div class="feature-card">
+        <div class="info-blocks">
+            <div class="info-block">
                 <h3>Актуальность</h3>
-                <p>Восполнение дефицита квалифицированных специалистов по БПЛА</p>
+                <p>Решение проблемы дефицита квалифицированных специалистов по сборке БПЛА через доступное VR-обучение.</p>
             </div>
-            <div class="feature-card">
-                <h3>Цель</h3>
-                <p>Обучение сборке электрических схем квадрокоптеров в VR-среде</p>
+            <div class="info-block">
+                <h3>Цель проекта</h3>
+                <p>Создание реалистичного симулятора сборки электрических компонентов квадрокоптера в виртуальной среде.</p>
             </div>
-            <div class="feature-card">
+            <div class="info-block">
                 <h3>Технологии</h3>
-                <p>Точные 3D-модели всех компонентов квадрокоптера</p>
+                <p>Использование Unity 3D, C# и VR-гарнитур для создания immersive-опыта обучения.</p>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
