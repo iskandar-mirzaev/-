@@ -4,47 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VR симулятор | Участники</title>
-    <link rel="stylesheet" href="css/style.css">
     <style>
+        :root {
+            --primary-red: #d32f2f;
+            --primary-orange: #f57c00;
+            --primary-white: #ffffff;
+            --content-padding: min(5vw, 2.5rem);
+            --max-width: 1200px;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--primary-white);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary-red), var(--primary-orange));
+            color: white;
+            padding: 1.5rem var(--content-padding);
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+        nav a.active {
+            background: rgba(255,255,255,0.2);
+        }
+        main {
+            padding: 2rem var(--content-padding);
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
         .team-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1.5rem;
+            gap: 2rem;
             margin: 2rem 0;
         }
         .team-member {
             background: white;
-            border-radius: 10px;
             padding: 1.5rem;
-            box-shadow: 0 4px 8px rgba(214, 69, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             text-align: center;
-            transition: transform 0.3s ease;
-        }
-        .team-member:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(214, 69, 0, 0.15);
         }
         .member-photo {
-            width: 140px;
-            height: 140px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #f57c00;
+            border: 3px solid var(--primary-orange);
             margin: 0 auto 1rem;
-            display: block;
         }
-        .supervisor {
-            background-color: #fff3e0;
-            padding: 2rem;
+        footer {
+            background: var(--primary-red);
+            color: white;
+            text-align: center;
+            padding: 1.5rem var(--content-padding);
             margin-top: 3rem;
-            border-radius: 10px;
         }
-        .team-structure {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 10px;
-            margin-top: 2rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        @media (max-width: 768px) {
+            :root {
+                --content-padding: 1.5rem;
+            }
         }
     </style>
 </head>
@@ -63,70 +97,14 @@
     </header>
 
     <main>
-        <section>
-            <h2>Наша команда</h2>
-            
-            <div class="team-container">
-                <div class="team-member">
-                    <img src="images/members/member-sm.jpg" alt="Мельников С.В." class="member-photo">
-                    <h3>Мельников Серафим Владимирович</h3>
-                    <p><strong>Роль:</strong> Разработка, UI/UX дизайн</p>
-                    <p><strong>Группа:</strong> 221-378</p>
-                </div>
-                
-                <div class="team-member">
-                    <img src="images/members/member-tm.jpg" alt="Мусатов Т.Э." class="member-photo">
-                    <h3>Мусатов Тимофей Эдуардович</h3>
-                    <p><strong>Роль:</strong> 3D моделирование</p>
-                    <p><strong>Группа:</strong> 221-3711</p>
-                </div>
-                
-                <div class="team-member">
-                    <img src="images/members/member-ek.jpg" alt="Крылов Е.О." class="member-photo">
-                    <h3>Крылов Егор Олегович</h3>
-                    <p><strong>Роль:</strong> 3D моделирование</p>
-                    <p><strong>Группа:</strong> 221-379</p>
-                </div>
-                
-                <div class="team-member">
-                    <img src="images/members/member-im.jpg" alt="Мирзаев И.Б." class="member-photo">
-                    <h3>Мирзаев Искандархон Бахромходжаевич</h3>
-                    <p><strong>Роль:</strong> Портирование</p>
-                    <p><strong>Группа:</strong> 241-334</p>
-                </div>
-                
-                <div class="team-member">
-                    <img src="images/members/member-dm.jpg" alt="Мунх-Эрдэнэ Д." class="member-photo">
-                    <h3>Мунх-Эрдэнэ Дагийсурэн</h3>
-                    <p><strong>Роль:</strong> Разработка</p>
-                    <p><strong>Группа:</strong> 221-3710</p>
-                </div>
-            </div>
-
-            <div class="supervisor">
-                <h3>Руководитель проекта</h3>
-                <div class="team-member">
-                    <img src="images/members/supervisor.jpg" alt="Вирковская А.А." class="member-photo">
-                    <h3>Вирковская Анастасия Алексеевна</h3>
-                    <p><strong>Должность:</strong> Преподаватель</p>
-                </div>
-            </div>
-
-            <div class="team-structure">
-                <h3>Структура работы в проекте</h3>
-                <ul>
-                    <li><strong>Разработка:</strong> Мельников С.В., Мунх-Эрдэнэ Д.</li>
-                    <li><strong>3D моделирование:</strong> Мусатов Т.Э., Крылов Е.О.</li>
-                    <li><strong>UI/UX дизайн:</strong> Мельников С.В.</li>
-                    <li><strong>Портирование:</strong> Мирзаев И.Б.</li>
-                </ul>
-            </div>
-        </section>
+        <h2>Наша команда</h2>
+        <div class="team-container">
+            <!-- Участники здесь -->
+        </div>
     </main>
 
     <footer>
         <p>© 2024 Московский Политех | Проектная деятельность</p>
-        <p>VR симулятор сборки электрической схемы квадрокоптера</p>
     </footer>
 </body>
 </html>
