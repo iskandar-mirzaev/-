@@ -3,23 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VR симулятор сборки квадрокоптера | Главная</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>VR симулятор | Главная</title>
     <style>
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/drone-bg.jpg');
-            background-size: cover;
+        :root {
+            --primary-red: #d32f2f;
+            --primary-orange: #f57c00;
+            --primary-white: #ffffff;
+            --content-padding: min(5vw, 2.5rem);
+            --max-width: 1200px;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--primary-white);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary-red), var(--primary-orange));
             color: white;
-            padding: 4rem 2rem;
+            padding: 1.5rem var(--content-padding);
             text-align: center;
-            border-radius: 8px;
-            margin-bottom: 2rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+        nav a.active {
+            background: rgba(255,255,255,0.2);
+        }
+        main {
+            padding: 2rem var(--content-padding);
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
         }
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin: 3rem 0;
+            margin: 2rem 0;
+        }
+        .feature-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: var(--primary-red);
+            color: white;
+            text-align: center;
+            padding: 1.5rem var(--content-padding);
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            :root {
+                --content-padding: 1.5rem;
+            }
+            nav ul {
+                flex-wrap: wrap;
+            }
         }
     </style>
 </head>
@@ -39,39 +96,24 @@
 
     <main>
         <section class="hero">
-            <h2>Инновационный тренажер для специалистов БПЛА</h2>
-            <p>Обучение сборке электрических схем квадрокоптеров в виртуальной реальности</p>
+            <h2>Изучайте сборку БПЛА в виртуальной реальности</h2>
+            <p>Инновационный VR-тренажер для подготовки специалистов</p>
         </section>
 
         <section class="features">
             <div class="feature-card">
-                <img src="images/vr-icon.png" alt="VR" width="60">
-                <h3>VR-технологии</h3>
-                <p>Полное погружение в процесс сборки с помощью VR-гарнитур</p>
+                <h3>Актуальность</h3>
+                <p>Восполнение дефицита квалифицированных специалистов</p>
             </div>
             <div class="feature-card">
-                <img src="images/education-icon.png" alt="Обучение" width="60">
-                <h3>Образование</h3>
-                <p>Решение проблемы нехватки квалифицированных специалистов</p>
-            </div>
-            <div class="feature-card">
-                <img src="images/component-icon.png" alt="Компоненты" width="60">
-                <h3>Детализация</h3>
-                <p>Точные 3D-модели всех компонентов квадрокоптера</p>
-            </div>
-        </section>
-
-        <section class="demo-video">
-            <h2>Демонстрация прототипа</h2>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ВАШЕ_ВИДЕО" frameborder="0" allowfullscreen></iframe>
+                <h3>Цель</h3>
+                <p>Обучение сборке электрических схем квадрокоптеров</p>
             </div>
         </section>
     </main>
 
     <footer>
         <p>© 2024 Московский Политех | Проектная деятельность</p>
-        <p>VR симулятор сборки электрической схемы квадрокоптера</p>
     </footer>
 </body>
 </html>
