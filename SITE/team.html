@@ -8,45 +8,41 @@
     <style>
         .team-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
             margin: 2rem 0;
         }
         .team-member {
             background: white;
-            border-radius: 8px;
+            border-radius: 10px;
             padding: 1.5rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(214, 69, 0, 0.1);
             text-align: center;
-            transition: all 0.3s ease;
+            transition: transform 0.3s ease;
         }
         .team-member:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(214, 69, 0, 0.2);
+            box-shadow: 0 6px 12px rgba(214, 69, 0, 0.15);
         }
-        .avatar {
-            width: 120px;
-            height: 120px;
+        .member-photo {
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
-            background: linear-gradient(45deg, #d32f2f, #f57c00);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
+            object-fit: cover;
+            border: 3px solid #f57c00;
             margin: 0 auto 1rem;
-            font-weight: bold;
+            display: block;
         }
         .supervisor {
             background-color: #fff3e0;
             padding: 2rem;
             margin-top: 3rem;
-            border-radius: 8px;
+            border-radius: 10px;
         }
         .team-structure {
             background: white;
             padding: 1.5rem;
-            border-radius: 8px;
+            border-radius: 10px;
             margin-top: 2rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
@@ -72,46 +68,49 @@
             
             <div class="team-container">
                 <div class="team-member">
-                    <div class="avatar">СМ</div>
+                    <img src="images/members/member-sm.jpg" alt="Мельников С.В." class="member-photo">
                     <h3>Мельников Серафим Владимирович</h3>
                     <p><strong>Роль:</strong> Разработка, UI/UX дизайн</p>
                     <p><strong>Группа:</strong> 221-378</p>
                 </div>
                 
                 <div class="team-member">
-                    <div class="avatar">ТМ</div>
+                    <img src="images/members/member-tm.jpg" alt="Мусатов Т.Э." class="member-photo">
                     <h3>Мусатов Тимофей Эдуардович</h3>
                     <p><strong>Роль:</strong> 3D моделирование</p>
                     <p><strong>Группа:</strong> 221-3711</p>
                 </div>
                 
                 <div class="team-member">
-                    <div class="avatar">ЕК</div>
+                    <img src="images/members/member-ek.jpg" alt="Крылов Е.О." class="member-photo">
                     <h3>Крылов Егор Олегович</h3>
                     <p><strong>Роль:</strong> 3D моделирование</p>
                     <p><strong>Группа:</strong> 221-379</p>
                 </div>
                 
                 <div class="team-member">
-                    <div class="avatar">ИМ</div>
+                    <img src="images/members/member-im.jpg" alt="Мирзаев И.Б." class="member-photo">
                     <h3>Мирзаев Искандархон Бахромходжаевич</h3>
                     <p><strong>Роль:</strong> Портирование</p>
                     <p><strong>Группа:</strong> 241-334</p>
                 </div>
                 
                 <div class="team-member">
-                    <div class="avatar">ДМ</div>
+                    <img src="images/members/member-dm.jpg" alt="Мунх-Эрдэнэ Д." class="member-photo">
                     <h3>Мунх-Эрдэнэ Дагийсурэн</h3>
                     <p><strong>Роль:</strong> Разработка</p>
                     <p><strong>Группа:</strong> 221-3710</p>
                 </div>
             </div>
 
-            <div class="team-member">
-    <img src="images/members/supervisor.jpg" alt="Вирковская А.А." class="member-photo">
-    <h3>Вирковская Анастасия Алексеевна</h3>
-    <p><strong>Должность:</strong> Преподаватель</p>
-</div>
+            <div class="supervisor">
+                <h3>Руководитель проекта</h3>
+                <div class="team-member">
+                    <img src="images/members/supervisor.jpg" alt="Вирковская А.А." class="member-photo">
+                    <h3>Вирковская Анастасия Алексеевна</h3>
+                    <p><strong>Должность:</strong> Преподаватель</p>
+                </div>
+            </div>
 
             <div class="team-structure">
                 <h3>Структура работы в проекте</h3>
