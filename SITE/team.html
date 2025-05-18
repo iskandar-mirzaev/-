@@ -4,49 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VR симулятор | Участники</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 1.5rem;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-        nav a:hover, nav a.active {
-            background-color: rgba(255,255,255,0.2);
-            text-decoration: none;
-        }
-        main {
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
         .team-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -59,12 +18,17 @@
             padding: 1.5rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             text-align: center;
+            transition: all 0.3s ease;
+        }
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(214, 69, 0, 0.2);
         }
         .avatar {
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            background-color: #3498db;
+            background: linear-gradient(45deg, #d32f2f, #f57c00);
             color: white;
             display: flex;
             align-items: center;
@@ -74,7 +38,7 @@
             font-weight: bold;
         }
         .supervisor {
-            background-color: #f0f8ff;
+            background-color: #fff3e0;
             padding: 2rem;
             margin-top: 3rem;
             border-radius: 8px;
@@ -85,21 +49,6 @@
             border-radius: 8px;
             margin-top: 2rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 1.5rem;
-            margin-top: 2rem;
-        }
-        @media (max-width: 768px) {
-            .team-container {
-                grid-template-columns: 1fr;
-            }
-            nav ul {
-                gap: 1rem;
-            }
         }
     </style>
 </head>
@@ -118,70 +67,65 @@
     </header>
 
     <main>
-        <h2>Наша команда</h2>
-        
-        <div class="team-container">
-            <div class="team-member">
-                <div class="avatar">СМ</div>
-                <h3>Мельников Серафим Владимирович</h3>
-                <p><strong>Роль:</strong> Разработка, UI/UX дизайн</p>
-                <p><strong>Группа:</strong> 221-378</p>
-            </div>
+        <section>
+            <h2>Наша команда</h2>
             
-            <div class="team-member">
-                <div class="avatar">РР</div>
-                <h3>Руфов Родион Рафаэлевич</h3>
-                <p><strong>Роль:</strong> Разработка</p>
-                <p><strong>Группа:</strong> 221-3710</p>
+            <div class="team-container">
+                <div class="team-member">
+                    <div class="avatar">СМ</div>
+                    <h3>Мельников Серафим Владимирович</h3>
+                    <p><strong>Роль:</strong> Разработка, UI/UX дизайн</p>
+                    <p><strong>Группа:</strong> 221-378</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="avatar">ТМ</div>
+                    <h3>Мусатов Тимофей Эдуардович</h3>
+                    <p><strong>Роль:</strong> 3D моделирование</p>
+                    <p><strong>Группа:</strong> 221-3711</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="avatar">ЕК</div>
+                    <h3>Крылов Егор Олегович</h3>
+                    <p><strong>Роль:</strong> 3D моделирование</p>
+                    <p><strong>Группа:</strong> 221-379</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="avatar">ИМ</div>
+                    <h3>Мирзаев Искандархон Бахромходжаевич</h3>
+                    <p><strong>Роль:</strong> Портирование</p>
+                    <p><strong>Группа:</strong> 241-334</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="avatar">ДМ</div>
+                    <h3>Мунх-Эрдэнэ Дагийсурэн</h3>
+                    <p><strong>Роль:</strong> Разработка</p>
+                    <p><strong>Группа:</strong> 221-3710</p>
+                </div>
             </div>
-            
-            <div class="team-member">
-                <div class="avatar">ТМ</div>
-                <h3>Мусатов Тимофей Эдуардович</h3>
-                <p><strong>Роль:</strong> 3D моделирование</p>
-                <p><strong>Группа:</strong> 221-3711</p>
-            </div>
-            
-            <div class="team-member">
-                <div class="avatar">ЕК</div>
-                <h3>Крылов Егор Олегович</h3>
-                <p><strong>Роль:</strong> 3D моделирование</p>
-                <p><strong>Группа:</strong> 221-379</p>
-            </div>
-            
-            <div class="team-member">
-                <div class="avatar">ИМ</div>
-                <h3>Мирзаев Искандархон Бахромходжаевич</h3>
-                <p><strong>Роль:</strong> Портирование</p>
-                <p><strong>Группа:</strong> 241-334</p>
-            </div>
-            
-            <div class="team-member">
-                <div class="avatar">ДМ</div>
-                <h3>Мунх-Эрдэнэ Дагийсурэн</h3>
-                <p><strong>Роль:</strong> Разработка</p>
-                <p><strong>Группа:</strong> 221-3710</p>
-            </div>
-        </div>
 
-        <div class="supervisor">
-            <h3>Руководитель проекта</h3>
-            <div class="team-member">
-                <div class="avatar">АВ</div>
-                <h3>Вирковская Анастасия Алексеевна</h3>
-                <p><strong>Должность:</strong> Преподаватель</p>
+            <div class="supervisor">
+                <h3>Руководитель проекта</h3>
+                <div class="team-member">
+                    <div class="avatar">АВ</div>
+                    <h3>Вирковская Анастасия Алексеевна</h3>
+                    <p><strong>Должность:</strong> Преподаватель</p>
+                </div>
             </div>
-        </div>
 
-        <div class="team-structure">
-            <h3>Структура работы в проекте</h3>
-            <ul>
-                <li><strong>Разработка:</strong> Мельников С.В., Руфов Р.Р., Мунх-Эрдэнэ Д.</li>
-                <li><strong>3D моделирование:</strong> Мусатов Т.Э., Крылов Е.О.</li>
-                <li><strong>UI/UX дизайн:</strong> Мельников С.В.</li>
-                <li><strong>Портирование:</strong> Мирзаев И.Б.</li>
-            </ul>
-        </div>
+            <div class="team-structure">
+                <h3>Структура работы в проекте</h3>
+                <ul>
+                    <li><strong>Разработка:</strong> Мельников С.В., Мунх-Эрдэнэ Д.</li>
+                    <li><strong>3D моделирование:</strong> Мусатов Т.Э., Крылов Е.О.</li>
+                    <li><strong>UI/UX дизайн:</strong> Мельников С.В.</li>
+                    <li><strong>Портирование:</strong> Мирзаев И.Б.</li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer>
